@@ -1,0 +1,165 @@
+/* Dashboard.css */
+
+.sider {
+  background-color: #0000;
+  overflow: auto;
+  height: 100vh;
+  position: fixed !important;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  flex: 0 0 265px;
+  max-width: 265px;
+  min-width: 265px;
+  width: 265px;
+}
+
+.sider.collapsed {
+  flex: 0 0 80px;
+  max-width: 80px;
+  min-width: 80px;
+  width: 80px;
+}
+
+.sider .ant-layout-sider-children {
+  background: #fff;
+  border-radius: 0;
+  border-right: 1px solid #ddd;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+.logo-container {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  padding: 15px 30px 0;
+  text-align: center;
+}
+
+.logo-container img {
+  height: 80px;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+}
+
+.logout-container button {
+  background: linear-gradient(93.9deg, #ff8432, #ffab73 99.96%);
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  transform: translateX(0);
+  transition: all 175ms ease-in-out;
+  width: 100%;
+}
+
+.header.ant-layout-header {
+  margin-left: 200px;
+  transition: all 0.2s ease-in-out;
+}
+
+.layout-content.collapsed .header.ant-layout-header {
+  margin-left: 80px;
+}
+
+.content.ant-layout-content {
+  margin: 24px 15px 24px 200px;
+  transition: all 0.2s ease-in-out;
+}
+
+.layout-content.collapsed .content.ant-layout-content {
+  margin: 24px 15px 24px 80px;
+}
+
+
+
+/* Carousel start */
+
+.ant-carousel .slick-dots {
+  position: absolute;
+  bottom: 20%;
+  left: -80%;
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;*/
+}
+
+.ant-carousel .slick-dots li {
+  margin: 0 4px;
+}
+
+.ant-carousel .slick-dots li button {
+  /*width: 12px;
+  height: 12px;
+  border-radius: 50%;*/
+  background-color: #000;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background-color: #ffab73;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .ant-carousel .slick-dots {
+    left: -70% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .ant-carousel .slick-dots {
+    left: -60% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .ant-carousel .slick-dots {
+    left: -50% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .ant-carousel .slick-dots {
+    left: -40% !important;
+  }
+}
+
+/* Carousel End */
+
+
+/* Carousel Content start */
+
+.greeting-container {
+  padding: 20px;
+  /*border: 1px solid #ddd;*/
+  /*border-radius: 8px;*/
+  /*background-color: #f9f9f9;*/
+  text-align: center;
+}
+
+.greeting-title {
+  color: #165db8;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 0 0 15px;
+}
+
+.greeting-message {
+  color: #19233b;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 0;
+}
+
+.application-name,.good-day {
+  font-weight: bold;
+  color: #ff8432;
+}
+
+/* Carousel Content end */
